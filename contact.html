@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="vieport" content="with=device-weidth, initial-scale=1.0">
+    <title>EduFord</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="elastic-slider.css">
+    
+    <script src="elastic-slider.js"></script><script src="snap.svg-min.js"></script>
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <style>
+    .clipped-left {
+        -webkit-clip-path: url(#clipped-left);
+        clip-path: url(#clipped-left);
+    }
+    .clipped-right {
+        -webkit-clip-path: url(#clipped-right);
+        clip-path: url(#clipped-right);
+    }
+    </style>
+    <script src="https://kit.fontawesome.com/8729fc1869.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="images/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fas fa-arrow-alt-circle-right" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="course.html">COURSE</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="login.html">SIGN UP/IN</a></li>
+            </ul>
+        </div>
+        <i class="fas fa-arrow-alt-circle-left" onclick="showMenu()"></i>
+    </nav>
+    <h1>Contact Us</h1>
+</section>
+    
+<!----- Contact Us ----->
+    
+ <section class="location">
+            
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2235.0482647556573!2d-1.2565554845674691!3d51.75481970040398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876c6a9ef8c485b%3A0xd2ff1883a001afed!2sUniversity%20of%20Oxford!5e1!3m2!1sen!2sin!4v1628613427149!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        
+        
+</section>
+    
+<section class="contact-us">
+    
+    <div class="row">
+        
+        <div class="contact-col">
+            <div>
+                <i class="fas fa-home"></i>
+                <span>
+                    <h5>Catte Street, Claredon Building</h5>
+                    <p>Oxford, London, UK</p>
+                </span>
+            </div>
+            <div>
+                <i class="fas fa-phone-alt"></i>
+                <span>
+                    <h5>+1 8745689432</h5>
+                    <p>Monday to Saturday, 8AM to 8PM</p>
+                </span>
+            </div>
+            <div>
+                <i class="fas fa-envelope-open-text"></i>
+                <span>
+                    <h5>tun06tai@gmail.com</h5>
+                    <p>Mail us your quarry</p>
+                </span>
+            </div>
+        </div>
+        <div class="contact-col">
+            <form action="form-handler.php" method="post"></form>    
+                <input type="text" name="name" placeholder="Enter Your Name" required>
+                <input type="email" name="email" placeholder="Enter Your Email" required>
+                <input type="text" name="subject" placeholder="Enter Your Subject" required>
+                <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                <button type="submit" class="hero-btn red-btn">Send Message</button>
+        </div>
+    </div>
+    
+</section>    
+    
+<!----- Footer ----->
+    
+<section class="footer">
+    <h4>About Us</h4>
+    <p>We offer cources of different subjects and in the desired language. Be perfect bring the success.<br>We offer graduation cources of different subjects and in the desired language. Designing your feuture plans. Be perfect bring the success.<br>We offer post graduation plans of different subjects and in the desired language. Design your feuture plans with us. Be perfect bring the success in life.<br> With millions of students, success in their life, hard work, live classes and a bright feuture ahead.</p>
+    <div class="icons">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-linkedin"></i>
+    </div>
+    <p>Made with <i class="far fa-heart"></i> by XzaniX</p>
+</section>
+    <script>
+        
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }        
+
+        
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
